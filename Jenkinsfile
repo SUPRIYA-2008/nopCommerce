@@ -15,7 +15,7 @@ pipeline {
         }
         stage('restore and build') {
             steps {
-                sh '''dotnet restore src/NopCommerce.sln
+                sh '''dotnet restore src/NopCommerce.sln ,
                       dotnet build -c Release src/NopCommerce.sln'''
             }
         }       
